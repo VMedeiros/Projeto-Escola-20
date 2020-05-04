@@ -1,0 +1,35 @@
+<h1>Bem-Vindo</h1>
+
+<div class="ui-g">
+
+  <div class="ui-g-6">
+    <p-card header="Escolas" subheader="Listagem e Cadastro" [style]="{width: '360px', float:'right'}"
+      styleClass="ui-card-shadow">
+      <p-header>
+        <img src="Card" src="./assets/img/school.png">
+      </p-header>
+      <div>Nesta seção você poderá visuzalizar, adicionar, editar e remover as <strong>escolas</strong>
+        selecionadas.</div>
+      <p-footer>
+        <button pButton type="button" label="Escola" icon="pi pi-angle-right" (click)="eventEscola()"
+          pTooltip="Acessar Escolas" tooltipPosition="bottom"></button>
+      </p-footer>
+    </p-card>
+  </div>
+
+  <div class="ui-g-6">
+    <p-card header="Turmas" subheader="Listagem e Cadastro" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+      <p-header>
+        <img src="Card" src="./assets/img/student.png">
+      </p-header>
+      <div>Nesta seção você poderá visuzalizar, adicionar, editar e remover as <strong>turmas</strong>
+        selecionadas.
+      </div>
+      <p-footer>
+        <button pButton type="button" label="Turma" icon="pi pi-angle-right" (click)="eventTurma()"
+          pTooltip="Acessar Turmas" tooltipPosition="bottom"></button>
+      </p-footer>
+    </p-card>
+  </div>
+
+</div>

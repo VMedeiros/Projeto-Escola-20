@@ -1,0 +1,20 @@
+.background {
+    background: linear-gradient( #fff, #d6e8e0);
+    color: #176d6d;
+}
+
+.container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+strong {
+    color: #176d6d;
+}
+
+.img-card {
+    left: 50%;
+}

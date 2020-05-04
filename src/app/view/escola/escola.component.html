@@ -1,0 +1,68 @@
+<div class="background">
+    <h1 class="texto">Listagem de Escolas</h1>
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <button pButton label="Adicionar" type="button" icon="pi pi-plus" style="float: right;"
+                (click)="getAdicionar()" pTooltip="Adicionar Escola" tooltipPosition="bottom"></button>
+        </div>
+    </div>
+
+    <p-table #dt [value]="escolas" [paginator]="true" [rows]="10">
+        <ng-template pTemplate="caption">
+            <strong>
+                Escolas
+            </strong>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th class="content-column" *ngFor="let col of cols" [pSortableColumn]="col.field"
+                    [ngStyle]="{'width': col.width}">
+                    {{col.header}}
+                    <p-sortIcon [field]="col.field"></p-sortIcon>
+                </th>
+                <th style="width: 15%;" class="content-column"></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-escola>
+            <tr [pEditableRow]="rowData">
+                <td *ngFor="let col of cols" [ngStyle]="{'text-align': col.align}">
+                    {{escola[col.field]?.nome ? escola[col.field]?.nome : escola[col.field] | titlecase}}
+                </td>
+
+                <td style="text-align:center">
+                    <div class="ui-g">
+                        <div class="ui-g-6">
+                            <button pButton type="button" pInitEditableRow icon="pi pi-pencil"
+                                (click)="getEditar($event, escola)" pTooltip="Editar Escola"
+                                tooltipPosition="bottom"></button>
+                        </div>
+                        <div class="ui-g-6">
+                            <button pButton type="button" pInitEditableRow icon="pi pi-times" class="btn-secondary"
+                                (click)="getExcluir($event, escola)" pTooltip="Excluir Escola"
+                                tooltipPosition="bottom"></button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <h1 style="color: white; font-size: 20px; margin-left: 15px;">
+                <i class="pi pi-exclamation-triangle"></i>
+                Nenhuma escola encontrada.
+            </h1>
+        </ng-template>
+
+    </p-table>
+
+    <app-cadastro-escola [item]="itemSelect" (eventOutput)="getTableInfo()"></app-cadastro-escola>
+
+    <br>
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <button pButton label="voltar" type="button" icon="pi pi-angle-left" style="float: right;" pTooltip="Voltar"
+                tooltipPosition="bottom" (click)="eventVoltar()"></button>
+        </div>
+    </div>
+
+</div>

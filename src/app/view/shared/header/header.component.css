@@ -1,0 +1,62 @@
+.header {
+  background: linear-gradient(to right, #c7ede6, #e6e2d9);
+}
+
+:host ::ng-deep .ui-sidebar {
+  background: linear-gradient(to right, #c7ede6, #e6e2d9);
+  border: none;
+}
+
+:host ::ng-deep .ui-sidebar .ui-sidebar-close {
+  color: #176d6d;
+}
+
+.texto {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #176d6d;
+}
+
+.menu-logo {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 2%;
+}
+
+.header-img {
+  border-radius: 22px;
+  background: #fff;
+  width: 9%;
+  margin-bottom: -7%;
+}
+
+.menu-img {
+  width: 35%;
+  border-radius: 100%;
+  margin-left: 33%;
+}
+
+.menu-logo2 {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 2%;
+}
+
+.menu-img2 {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.texto-menu {
+  margin: 0;
+  padding: 0;
+  color: #176d6d;
+  cursor: pointer;
+}
+
+.icones {
+  margin-left: -38px;
+  margin-right: 20px;
+  color: #176d6d;
+}

@@ -1,0 +1,30 @@
+.background {
+    background: linear-gradient( #fff, #d6e8e0);
+    color: #176d6d;
+}
+
+.container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.container-menu {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5%;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.texto {
+    margin: 0px;
+    padding: 10px;
+    color: #176d6d;
+    text-align: center;
+}

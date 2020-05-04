@@ -1,0 +1,59 @@
+{
+  "escola": [
+    {
+      "id": 1,
+      "nome": "Escola A",
+      "endereco": "Endereço A",
+      "cnpj": "11111111111111",
+      "turma": {
+        "id": 1,
+        "nome": "Turma A",
+        "horario": "10:20 AM"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Escola B",
+      "endereco": "Endereço B",
+      "cnpj": "22222222222222",
+      "turma": {
+        "id": 2,
+        "nome": "Turma B",
+        "horario": "11:20 AM"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Escola C",
+      "endereco": "Endereço C",
+      "cnpj": "33333333333333",
+      "turma": {
+        "id": 3,
+        "nome": "Turma C",
+        "horario": "12:20 AM"
+      }
+    }
+  ],
+  "turma": [
+    {
+      "id": 1,
+      "nome": "Turma A",
+      "horario": "10:20 AM"
+    },
+    {
+      "id": 2,
+      "nome": "Turma B",
+      "horario": "11:20 AM"
+    },
+    {
+      "id": 3,
+      "nome": "Turma C",
+      "horario": "12:20 AM"
+    },
+    {
+      "id": 4,
+      "nome": "Turma D",
+      "horario": "13:20 AM"
+    }
+  ]
+}
